@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("./img/1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#heroSocialIcons {
+  position: absolute;
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  font-size: 24px;
+  color: white;
+}
+
+#heroSocialIcons .fab {
+  padding: 5px;
+}
+
+.fab:hover {
+  color: rgb(0, 230, 50);
+}
+
+.hero-text {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  padding: 0% 10%;
+  top: 50%;
+  transform: translate(0%, -40%);
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 92px;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.hero-text button {
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px 40px;
+  color: white;
+  background-color: rgb(201, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+#aboutMe {
+  max-width: 900px;
+  padding: 90px 10% 120px 10%;
+}
+
+.text {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+#aboutMe p {
+  font-size: 32px;
+}
+
+#portfolio {
+  background-color: black;
+  color: white;
+  padding: 60px 10% 60px 10%;
+}
+
+#portfolio h2 {
+  margin-bottom: 30px;
+}
+
+#portfolioContainer {
+}
+
+.portfolioCard {
+  margin-bottom: 30px;
+  background-color: rgb(190, 86, 86);
+}
+
+.placeHolderImg {
+  height: 200px;
+  width: 100%;
+}
+
+.colour1 {
+  background-color: rgb(140, 86, 190);
+}
+.colour2 {
+  background-color: rgb(86, 190, 133);
+}
+.colour3 {
+  background-color: rgb(86, 131, 190);
+}
+
+.portfolioCard h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.portfolioCard p {
+  margin-bottom: 10px;
+}
+
+#contact {
+  background-color: black;
+  padding: 60px 10% 60px 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.sociaIcons {
+  padding-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+[type="submit"],
+textarea {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: rgb(86, 190, 133);
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(86, 131, 190);
+}
+
+.formContainer h3 {
+  font-size: 34px;
+  margin: 30px 0 25px 0;
+}
+
+footer {
+  color: white;
+  background-color: rgb(49, 49, 49);
+  text-align: center;
+  padding: 30px;
+}
+
+.fab {
+  color: white;
+  font-size: 40px;
+  margin-right: 10px;
+  vertical-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  #portfolioContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolioCard {
+    flex: 0 1 48%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .portfolioCard {
+    flex: 0 1 31%;
+  }
+
+  #contactFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contactChild {
+    flex: 0 1 46%;
+  }
+
+  .formContainer {
+    max-width: 500px;
+  }
+
+  .formContainer h3 {
+    display: none;
+  }
+}
